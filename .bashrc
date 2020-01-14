@@ -56,7 +56,7 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
-PS1="😎"
+PS1="\u@\h [\$(date +%k:%M:%S)] 😎 \w > "
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
@@ -98,3 +98,4 @@ alias proxy="export http_proxy=http://127.0.0.1:8080;export https_proxy=http://1
 alias noproxy="export http_proxy= ;export https_proxy= ;echo proxy desactived"
 alias fireprox="firefox -p proxy -no-remote"
 source ~/.bash_profile
+source ~/.pureline ~/.pureline.conf
