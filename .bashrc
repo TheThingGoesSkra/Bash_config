@@ -95,6 +95,6 @@ if ! shopt -oq posix; then
   fi
 fi
 alias proxy="export http_proxy=http://127.0.0.1:8080;export https_proxy=http://127.0.0.1:8080;echo proxy actived"
-alias noproxy="export http_proxy=\"\" ;export https_proxy=\"\" ;echo proxy desactived"
+alias noproxy="export http_proxy= ;export https_proxy= ;echo proxy desactived"
 alias fireprox="firefox -p proxy -no-remote"
 source ~/.bash_profile
