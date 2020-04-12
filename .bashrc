@@ -96,7 +96,16 @@ if ! shopt -oq posix; then
 fi
 alias proxy="export http_proxy=http://127.0.0.1:8080;export https_proxy=http://127.0.0.1:8080;echo proxy actived"
 alias noproxy="export http_proxy= ;export https_proxy= ;echo proxy desactived"
-alias fireprox="firefox -p proxy -no-remote"
+alias fireprox="firefox -p roxy -no-remote"
+alias gitcommit='sudo git commit -m "commit"'
+alias gitconfig='sudo git config user.mail "tom.bloch@univ-tlse3.fr" && sudo git config user.name "thethinggoesskra"'
+export l="/opt/linux"
+export s="/opt/resources"
+export w="/opt/windows"
+export i="/opt/web"
+export c="/opt/cracking"
+export r="/opt/reverse"
+export o="/opt/osint"
 source ~/.bash_profile
 source ~/.pureline ~/.pureline.conf
 
