@@ -106,6 +106,8 @@ export i="/opt/web"
 export c="/opt/cracking"
 export r="/opt/reverse"
 export o="/opt/osint"
+export k="/opt/kit"
+
 source ~/.bash_profile
 source ~/.pureline ~/.pureline.conf
 
