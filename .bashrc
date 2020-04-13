@@ -118,6 +118,27 @@ export r="/opt/reverse"
 export o="/opt/osint"
 export k="/opt/kit"
 
+putsmb() {
+    sudo cp "$1" "/srv/smb/root/"
+    sudo chown nobody:nogroup /srv/smb/root/*
+    sudo chmod 755 /srv/smb/root/*
+}
+puthttp() {
+    sudo cp "$1" "/srv/http/root/"
+    sudo chown $USER:$USER /srv/http/root/*
+    sudo chmod 755 /srv/http/root/*
+}
+putftp() {
+    sudo cp "$1" "/srv/ftp/root/"
+    sudo chown ftp:ftp /srv/ftp/root/*
+    sudo chmod 755 /srv/ftp/root/*
+}
+puttftp() {
+    sudo cp "$1" "/srv/tftp/root/"
+    sudo chown $USER:$USER /srv/tftp/root/*
+    sudo chmod 755 /srv/tftp/root/*
+}
+
 source ~/.bash_profile
 source ~/.pureline ~/.pureline.conf
 
